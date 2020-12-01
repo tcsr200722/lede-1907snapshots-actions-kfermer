@@ -23,10 +23,10 @@ sed -i '/option filter_aaaa 1/d' package/network/services/dnsmasq/files/dhcp.con
 #sed -i 's/net.netfilter.nf_conntrack_max=65535/net.netfilter.nf_conntrack_max=105535/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 #添加自定义插件1。
 git clone https://github.com/vernesong/OpenClash.git package/diy/luci-app-openclash
-git clone https://github.com/garypang13/openwrt-adguardhome.git package/diy/openwrt-adguardhome
-git clone https://github.com/rufengsuixing/luci-app-adguardhome.git  package/diy/luci-app-adguardhome
-sed -i '/resolvfile=/d' package/diy/luci-app-adguardhome/root/etc/init.d/AdGuardHome
-sed -i 's/DEPENDS:=/DEPENDS:=+AdGuardHome /g' package/diy/luci-app-adguardhome/Makefile
+#git clone https://github.com/garypang13/openwrt-adguardhome.git package/diy/openwrt-adguardhome
+#git clone https://github.com/rufengsuixing/luci-app-adguardhome.git  package/diy/luci-app-adguardhome
+#sed -i '/resolvfile=/d' package/diy/luci-app-adguardhome/root/etc/init.d/AdGuardHome
+#sed -i 's/DEPENDS:=/DEPENDS:=+AdGuardHome /g' package/diy/luci-app-adguardhome/Makefile
 #argon主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/diy/luci-theme-argon
 
@@ -38,7 +38,7 @@ git clone https://github.com/tty228/luci-app-serverchan.git package/diy/luci-app
 #git clone https://github.com/docker/docker-ce.git package/diy/luci-app-docker-ce
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/diy/luci-app-jd-dailybonus  #京东签到
 #git clone https://github.com/tohojo/sqm-scripts.git package/diy/sqm-scripts
-git clone  https://github.com/siwind/luci-app-ttyd.git package/diy/luci-app-ttyd
+#git clone  https://github.com/siwind/luci-app-ttyd.git package/diy/luci-app-ttyd
 
 #cd package
 #svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall
@@ -48,5 +48,5 @@ git clone  https://github.com/siwind/luci-app-ttyd.git package/diy/luci-app-ttyd
 
 # 内核显示增加自己个性名称
 date=`date +%m.%d.%Y`
-sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='LedeWrt 1907 N%C From Lienol'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='LedeWrt 1907 N%C From KFERMercer'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/# REVISION:=x/REVISION:= $date/g" include/version.mk
