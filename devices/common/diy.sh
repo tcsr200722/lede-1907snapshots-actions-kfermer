@@ -11,7 +11,6 @@
 # https://github.com/ledewrt
 #=================================================
 #添加固件版本描述。
-rm -Rf package/lean/luci-app-wrtbwmon
 #rm -Rf package/diy/luci-app-adguardhome
 # 修改登陆地址
 sed -i 's/192.168.1.1/192.168.168.1/g' package/base-files/files/bin/config_generate
@@ -28,7 +27,6 @@ git clone https://github.com/vernesong/OpenClash.git package/diy/luci-app-opencl
 #sed -i 's/DEPENDS:=/DEPENDS:=+AdGuardHome /g' package/diy/luci-app-adguardhome/Makefile
 #argon主题
 git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git  package/diy/luci-theme-argon
-git clone https://github.com/brvphoenix/luci-app-wrtbwmon.git  package/diy/luci-app-wrtbwmon
 git clone https://github.com/ledewrt/luci-app-eqos.git package/diy/luci-app-eqos
 git clone https://github.com/ledewrt/luci-app-ledeproxy.git package/diy/luci-app-ledeproxy
 git clone https://github.com/tty228/luci-app-serverchan.git package/diy/luci-app-serverchan
