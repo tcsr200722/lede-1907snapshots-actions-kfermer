@@ -43,8 +43,6 @@ git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/diy/lu
 svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-webrestriction package/luci-app-control-webrestriction
 svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-timewol package/luci-app-control-timewol
 svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-weburl package/luci-app-control-weburl
-
-git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
 git clone -b lede https://github.com/pymumu/luci-app-smartdns  package/luci-app-smartdns
 
 #cd package
