@@ -33,12 +33,19 @@ git clone -b 18.06 https://github.com/jerrykuku/luci-theme-argon.git package/diy
 git clone https://github.com/ledewrt/luci-app-eqos.git package/diy/luci-app-eqos
 git clone https://github.com/ledewrt/luci-app-ledeproxy.git package/diy/luci-app-ledeproxy
 git clone https://github.com/tty228/luci-app-serverchan.git package/diy/luci-app-serverchan
-#git clone https://github.com/destan19/OpenAppFilter.git package/diy/OpenAppFilter
+git clone https://github.com/destan19/OpenAppFilter.git package/diy/OpenAppFilter
 #git clone https://github.com/fw876/helloworld.git package/diy/luci-app-ssr-plus
 #git clone https://github.com/docker/docker-ce.git package/diy/luci-app-docker-ce
 git clone https://github.com/jerrykuku/luci-app-jd-dailybonus.git package/diy/luci-app-jd-dailybonus  #京东签到
 #git clone https://github.com/tohojo/sqm-scripts.git package/diy/sqm-scripts
 #git clone  https://github.com/siwind/luci-app-ttyd.git package/diy/luci-app-ttyd
+
+svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-webrestriction package/luci-app-control-webrestriction
+svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-timewol package/luci-app-control-timewol
+svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-weburl package/luci-app-control-weburl
+
+git clone https://github.com/destan19/OpenAppFilter.git package/OpenAppFilter
+git clone -b lede https://github.com/pymumu/luci-app-smartdns  package/luci-app-smartdns
 
 #cd package
 #svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall
