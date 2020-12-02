@@ -53,5 +53,5 @@ git clone -b lede https://github.com/pymumu/luci-app-smartdns  package/luci-app-
 
 # 内核显示增加自己个性名称
 date=`date +%m.%d.%Y`
-sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='LedeWrt 1907 N%C From KFERMercer'/g" package/base-files/files/etc/openwrt_release
+sed -i "s/DISTRIB_DESCRIPTION.*/DISTRIB_DESCRIPTION='LedeWrt Snapshots D%C From Lean'/g" package/base-files/files/etc/openwrt_release
 sed -i "s/# REVISION:=x/REVISION:= $date/g" include/version.mk
