@@ -136,7 +136,7 @@ jobs:
           /bin/bash "devices/${{matrix.target}}/$DIY_SH"
         )
         fi
-         #mv devices/${{matrix.target}}/$CONFIG_FILE .config
+         mv devices/${{matrix.target}}/$CONFIG_FILE .config
         if [ -f "devices/common/default-settings" ]; then
          cp -f devices/common/default-settings package/lean/default-settings/files/zzz-default-settings
         fi
