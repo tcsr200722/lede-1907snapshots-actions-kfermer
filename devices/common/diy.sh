@@ -12,6 +12,7 @@
 #=================================================
 #添加固件版本描述。
 #rm -Rf package/diy/luci-app-adguardhome
+rm -Rf package/lean/luci-app-wrtbwmon
 # 修改登陆地址
 sed -i 's/192.168.1.1/192.168.168.1/g' package/base-files/files/bin/config_generate
 # 关闭禁止解析IPv6 DNS 记录
@@ -42,6 +43,7 @@ svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-
 svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-weburl package/luci-app-control-weburl
 git clone -b lede https://github.com/pymumu/luci-app-smartdns  package/luci-app-smartdns
 svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon package/wrtbwmon
+svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
 #cd package
 #svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall
 #cd -
