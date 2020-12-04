@@ -42,8 +42,8 @@ svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-
 svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-timewol package/luci-app-control-timewol
 svn co https://github.com/ledewrt/openwrt-package/trunk/others/luci-app-control-weburl package/luci-app-control-weburl
 git clone -b lede https://github.com/pymumu/luci-app-smartdns  package/luci-app-smartdns
-svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon package/wrtbwmon
-svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
+#svn co https://github.com/brvphoenix/wrtbwmon/trunk/wrtbwmon package/wrtbwmon
+#svn co https://github.com/brvphoenix/luci-app-wrtbwmon/trunk/luci-app-wrtbwmon package/luci-app-wrtbwmon
 #cd package
 #svn co https://github.com/xiaorouji/openwrt-package/trunk/lienol/luci-app-passwall
 #cd -
